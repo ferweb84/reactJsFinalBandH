@@ -11,16 +11,16 @@ const NavBar = () => {
                 <NavLink className="nav-link active " aria-current="page" to={"/"}><img src={logo} width="70"  alt="Buy and Hold" />  </NavLink>
             </li>
             <li className="nav-item">
-                <NavLink className="nav-link link_header" to={"/"}>Home</NavLink>
+                <NavLink className="nav-link link_header" to={"/"}>Visita Buy & Hold</NavLink>
             </li>
             <li className="nav-item">
-                <NavLink className="nav-link link_header" to={"/menu"}>Visita Buy & Hold</NavLink>
+                <NavLink className="nav-link link_header" to={"/menu"}>Tienda</NavLink>
             </li>
             <li className="nav-item">
-                <NavLink className="nav-link link_header" to={"/category/:id"}>Contactanos </NavLink>
+                <NavLink className="nav-link link_header" to={"/category/:id"}>EnConstruccion </NavLink>
             </li>
             <li className="nav-item">
-                <NavLink className="nav-link link_header" to={"/item/:id"}>Tienda </NavLink>
+                <NavLink className="nav-link link_header" to={"/item/:id"}>Pedido </NavLink>
             </li>
              <NavLink className="nav__link" to="cart">
                 
