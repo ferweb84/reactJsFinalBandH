@@ -1,0 +1,15 @@
+.destacado {
+    
+    height: 340px;
+    border-radius: 25px;
+    padding: 20px;
+    border: 25px;
+
+}
+.img-destacada{
+    border-radius: 25px;
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+    border: 25px;
+}
