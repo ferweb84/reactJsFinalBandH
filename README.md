@@ -1,3 +1,20 @@
+PARA INICIAR EN CONSOLA ES: cd tuapp (en vez de miapp)
+luego npm start
+
+
+BUY AND HOLD - BOINAS 
+Se Puede visualizar en Netlify :
+
+https://buyandhold-boinas.netlify.app/
+
+(ex MinotaursInvestements) Surgio de no poder concretar MinotaursInvestements que era una Cartera de Inversiones (cryptos, acciones, etc). la cual derivo a una Tienda de Ropa relacionada con Cryptomonedas.El cual tiene su carrito de compra Funcional.
+
+Se le agrego para que se puedan Suscribirse totalmente funcional con Emailjs.El cual envia toda la informacion al mail de la tienda.Utilizando la Api de Emailjs.
+
+El presente proyecto es referido a una empresa de Boinas que proximamente va a agregar todos los accesorios de los años 20' y 30' dandole una vuelta de rosca para que sea vintage con onda, provincia de Cordoba. El cual contiene una página principal y tres más. Fue desarrollado con REACT JS, HTML, CSS, BOOTSTRAP 5.1, Javascript, ademas se adapta para desktop, tablet y celular.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
