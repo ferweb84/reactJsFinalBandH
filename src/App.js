@@ -9,6 +9,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailsContainer from './components/ItemDetailsContainer/ItemDetailsContainer';
 import Provider from './Context/Context';
 import Error404 from './components/Error404/Error404';
+import Suscripcion from './components/Suscripcion/Suscripcion';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path={"/checkout"} element={<Checkout />} />
             <Route path={"*"} element={<Error404 />} />
           </Routes>
+          <Suscripcion/>
           <Footer />
         </BrowserRouter>
       </div>

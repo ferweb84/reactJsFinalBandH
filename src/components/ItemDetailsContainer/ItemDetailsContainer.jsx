@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import ItemDetails from "./ItemDetails";
 import Loading from "../Loading/Loading";
+import "./ItemDetailsContainer.css"
 
 const ItemDetailsContainer = () => {
     const {id} = useParams();
@@ -23,7 +24,7 @@ const ItemDetailsContainer = () => {
 
     return (
         <div className="container">
-            {loading ? <Loading /> : <ItemDetails item={item} />}
+            {loading ? <Loading  /> : <ItemDetails item={item} />}
         </div>
     )
 }

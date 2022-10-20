@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import {CartContext} from "../../Context/Context";
 import ItemCount from "../ItemCount/ItemCount";
+import "./ItemDetails.css"
 
 const ItemDetails = ({item}) => {
     const {addItem} = useContext(CartContext);
@@ -13,7 +14,7 @@ const ItemDetails = ({item}) => {
     }
 
     return (
-        <div className="row mb-5">
+        <div className="tarjeta row mb-5">
             <div className="col-md-6 offset-md-3 text-center color_marron">
                 <img src={"../imagen/" + item.imagen} className="img-fluid" alt={item.nombre} />
                 <h1>{item.nombre}</h1>
