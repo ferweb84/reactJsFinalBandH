@@ -4,3 +4,8 @@
     box-sizing: border-box;
 }
 
+.tituloForm {
+    background-color:rgb(36, 129, 129);
+    color:white;
+    border-radius: 25px;
+}

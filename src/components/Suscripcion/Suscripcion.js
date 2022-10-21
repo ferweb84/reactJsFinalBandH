@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import Alert from'react-bootstrap/Alert';
+import './Suscripcion.css'
 
 
 
@@ -20,12 +22,24 @@ export const Suscripcion = () => {
   };
 
   return (
+    
     <form ref={form} onSubmit={sendEmail}>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Alert variant="success" className="tituloForm">
+      <Alert.Heading>Bienvenidos a BUY & HOLD .-</Alert.Heading>
+      <p>
+        SUSCRIPCION:
+      </p>
+      <hr />
+      <p className="mb-0">
+       Rellena el siguiente Formulario para que te enviemos todas las novedades y descuentos de Buy & Hold.-
+      </p>
+    </Alert>
+
+    <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Nombre y Apellido</Form.Label>
         <Form.Control placeholder="Ingresa Nombre y Apellido" />   
-      </Form.Group>       
-      <Form>
+    </Form.Group>       
+    <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Direccion de Email</Form.Label>
         <Form.Control type="email" placeholder="Ingresa Email" />
