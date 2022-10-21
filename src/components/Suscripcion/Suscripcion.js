@@ -47,7 +47,7 @@ export const Suscripcion = () => {
       </Form.Group>
       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
         <Form.Label>Escribe tu Mensaje </Form.Label>
-        <Form.Control as="textarea" rows={3} />
+        <Form.Control as="textarea" rows={3} placeholder="Ingresa Mensaje" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Seleccionar para enviar" />
