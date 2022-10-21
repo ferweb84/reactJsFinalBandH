@@ -6,7 +6,7 @@ import "../NavBar/NavBar.css"
 
 const NavBar = () => {
     return (
-        <ul className="nav d-flex align-items-center">
+        <ul className="nav">
             <li className="nav-itemLogo">
                 <NavLink className="nav-link active " aria-current="page" to={"/"}><img src={logo} width="70"  alt="Buy and Hold" />  </NavLink>
             </li>
@@ -22,9 +22,7 @@ const NavBar = () => {
             <li className="nav-item">
                 <NavLink className="nav-link link_header" to={"/item/:id"}>Pedido </NavLink>
             </li>
-             <NavLink className="nav__link" to="cart">
-                
-             </NavLink>
+            
         </ul>
     )
 }

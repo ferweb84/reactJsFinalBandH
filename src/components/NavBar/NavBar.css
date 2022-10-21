@@ -1,37 +1,24 @@
-*{
-    padding: 0;
-    margin: 0;
-}
 
-ul {
-    display: flex;
-    background-color: rgb(190, 42, 42);
-    position: sticky;
-    
-}
+
 
 li {
-    text-decoration: none;
-    list-style: none;
-    color: rgb(14, 12, 12);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family:  sans-serif;
     font-style: oblique;
 }
 
 .nav{
+    position:fixed;
     background-color: rgb(36, 129, 129);
     height: 100px;
-    width:1150px;
+    width: 95%;
     border-radius: 5px;
-    justify-content:left;
-    align-content: center;
-    
+    align-items: center;
+    padding-left: 20px;
+   
 }
 .nav-itemLogo {
-    border-radius: 10px;
-    background-color:none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family:  sans-serif;
     font-style: oblique;
 }
