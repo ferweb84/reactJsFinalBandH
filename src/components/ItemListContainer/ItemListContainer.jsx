@@ -4,6 +4,7 @@ import { getFirestore, collection, getDocs, query, where } from "firebase/firest
 import ItemList from "./ItemList";
 import Loading from "../Loading/Loading";
 
+
 const ItemListContainer = () => {
     const {id} = useParams();
     const [items, setItems] = useState([]);
@@ -23,9 +24,10 @@ const ItemListContainer = () => {
 
     return (
         <div className="container">
-            {loading ? <Loading /> : <ItemList items={items} />}  
+            {loading ? <Loading /> : <ItemList items={items} />} 
+            
         </div>
     )
-}
+    }
 
 export default ItemListContainer;
