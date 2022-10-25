@@ -3,61 +3,57 @@ import emailjs from '@emailjs/browser';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Alert from'react-bootstrap/Alert';
-import './Suscripcion.css'
+// import './Suscripcion.css';
 
 
-
-export const Suscripcion = () => {
+export const ContactUs = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_xzprr5s', 'template_8amglno', form.current, '1zHool9GL-wwujzE_')
+    emailjs.sendForm('service_xzprr5s', 'template_8amglno', e.target, '1zHool9GL-wwujzE_')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
+      e.target.reset();
   };
 
   return (
-    
+    <div className='container'>
     <form ref={form} onSubmit={sendEmail}>
       <Alert variant="success" className="tituloForm">
       <Alert.Heading>Bienvenidos a BUY & HOLD .-</Alert.Heading>
-      <p>
+     <p>
         SUSCRIPCION:
       </p>
-      <hr />
-      <p className="mb-0">
-       Rellena el siguiente Formulario para que te enviemos todas las novedades y descuentos de Buy & Hold.-
-      </p>
-    </Alert>
+       <hr />
+       <p className="mb-0">
+        Rellena el siguiente Formulario para que te enviemos todas las novedades y descuentos de Buy & Hold.-
+       </p>
+       </Alert>
 
-    <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Nombre y Apellido</Form.Label>
-        <Form.Control placeholder="Ingresa Nombre y Apellido" />   
-    </Form.Group>       
-    <Form>
+       <Form.Group className="mb-3" controlId="formBasicEmail">
+       <Form.Label >Nombre y Apellido</Form.Label >
+       <Form.Control placeholder="Nombre y apellido" name="nombre" type="text"/>
+      </Form.Group>
+
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Direccion de Email</Form.Label>
-        <Form.Control type="email" placeholder="Ingresa Email" />
-        
+      <Form.Label >Direccion de Email</Form.Label>
+      <Form.Control  placeholder="Email"name="email"  type="email" />
       </Form.Group>
+
       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Escribe tu Mensaje </Form.Label>
-        <Form.Control as="textarea" rows={3} placeholder="Ingresa Mensaje" />
+       <Form.Label >Escribe tu Mensaje </Form.Label>
+       <Form.Control placeholder="Mensaje"  name="message" as="textarea" rows={3}  />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Seleccionar para enviar" />
-      </Form.Group>
-      <Button variant="primary" type="submit">
-        Enviar
+
+      <Button variant="primary" type="submit" value="Send">
+         Enviar
       </Button>
-    </Form>
     </form>
+    </div>
   );
 };
-
-export default Suscripcion;
